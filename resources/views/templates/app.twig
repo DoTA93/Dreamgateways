@@ -1,0 +1,70 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+<!--<![endif]-->
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{base_url()}}/css/styles.css">
+  <script>!function () { for (var n = 0, i = ["webkit", "moz"], e = 0; e < i.length && !window.requestAnimationFrame; ++e)window.requestAnimationFrame = window[i[e] + "RequestAnimationFrame"], window.cancelAnimationFrame = window[i[e] + "CancelAnimationFrame"] || window[i[e] + "CancelRequestAnimationFrame"]; window.requestAnimationFrame || (window.requestAnimationFrame = function (i) { var e = (new Date).getTime(), a = Math.max(0, 16 - (e - n)), o = window.setTimeout(function () { i(e + a) }, a); return n = e + a, o }), window.cancelAnimationFrame || (window.cancelAnimationFrame = function (n) { clearTimeout(n) }) }();</script>
+  <title>DreamGateways - A gateway to explore Andaman</title>
+
+  
+  <script>
+  var cssFile = '{{base_url()}}/css/main-96edaa1b52.css';
+  var krPanoFile = '{{base_url()}}/css/krpano-08e32015d3.js';
+  </script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+  <script src="{{ base_url() }}/js/pace-538c425fe4.js" defer></script>
+  <script src="{{ base_url() }}/js/lazysizes-5377c19c50.js" async></script>
+</head>
+
+<body class="home page-template page-template-template-home page-template-template-home-php page">
+  
+  {% block content %}{% endblock %}
+
+  {% include 'templates/partials/footer.twig' %}
+  {% include 'templates/partials/navigation.twig' %}
+  {% include 'templates/partials/form.twig' %}
+
+
+  <script>!function () { for (var a, b = function () { }, c = ["assert", "clear", "count", "debug", "dir", "dirxml", "error", "exception", "group", "groupCollapsed", "groupEnd", "info", "log", "markTimeline", "profile", "profileEnd", "table", "time", "timeEnd", "timeline", "timelineEnd", "timeStamp", "trace", "warn"], d = c.length, e = window.console = window.console || {}; d--;)a = c[d], e[a] || (e[a] = b) }();</script>
+  <script id="webfont">WebFontConfig = { typekit: { id: 'lnh0ext' }, custom: { families: ['hello-lucky:n4', 'begade:n4,n7'] } }; var cb = function () {
+      var ref = document.getElementById('webfont')
+      var wf = document.createElement('script'); wf.src = '{{ base_url() }}/js/webfontloader.js'; wf.type = 'text/javascript'; wf.async = 'true'; ref.parentNode.insertBefore(wf, ref);
+    }; window.requestAnimationFrame(cb);</script>
+  <script src="{{ base_url() }}/js/devicepx-jetpack43a2.js?ver=201826" defer="defer"></script>
+  <script src="{{ base_url() }}/js/jquery-1.12.4.min.js" defer="defer"></script>
+  <script src="{{ base_url() }}/js/main-94b686a13f.js" defer="defer"></script>
+  <script src="{{ base_url() }}/js/jquery.json.min95b8.js?ver=2.3.2" defer="defer"></script>
+  <script src="{{ base_url() }}/js/gravityforms.min95b8.js?ver=2.3.2" defer="defer"></script>
+  <script src="{{ base_url() }}/js/placeholders.jquery.min95b8.js?ver=2.3.2" defer="defer"></script>
+  <script type='text/javascript' src='{{ base_url() }}/js/e-201826.js' async='async' defer='defer'></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  {# mobile buttons #}
+  <div class="mobile-buttons">
+    <a class="book-now booknow-trigger open-loader" href="#0">
+      <span>Reserve Now</span>
+    </a>
+    <a class="phone-num " href="tel:1.800.874.0118">
+      <span>1.800.874.0118</span>
+    </a>
+  </div>
+</body>
+
+
+</html>

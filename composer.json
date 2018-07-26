@@ -1,0 +1,14 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.3",
+        "mailgun/mailgun-php": "^2.5",
+        "php-http/curl-client": "^1.7",
+        "guzzlehttp/psr7": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    }
+}
