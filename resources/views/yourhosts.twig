@@ -1,0 +1,77 @@
+{% extends 'templates/app.twig' %}
+{% block content %}
+  <div class="mobile-nav-trigger-handler">
+
+    <a class="mobile-nav-trigger menu-toggle action--open" href="#0">
+      <span>
+        <span class="open">Menu</span>
+        <span class="close"><svg class="icon icon-cross"><use xlink:href="{{ base_url() }}/images/symbols.svg#icon-cross"></use></svg></span>
+      </span>
+    </a>
+  </div>
+  <div class="l-page" role="document">
+    <header class="l-region--header" role="banner">
+    <a class="navbar-brand" href="{{ path_for('home') }}">
+      <img  class="logo" src="{{ base_url() }}/images/logo.png" alt="Logo"/>
+      <img  class="stuck-logo" src="{{ base_url() }}/images/logo-horizontal.png" alt="Logo"/>
+    </a>
+    <div class="meta">
+      <a class="book-now booknow-trigger open-loader" href="#0"><span>Reserve Now</span></a>
+     <a class="phone-num" href="tel:+919474288404">
+          <span>+91-947-428-8404</span></a>
+    </div>
+</header>
+
+<section class="hero back not-full-screen" id="hero" data-video="{{ base_url() }}/videos/fish.mp4">
+  {# <div class="bg-img fade-lazyload lazyload lazypreload hero-bg-0" data-bgset="/wp-content/uploads/2016/08/DSC0764-proof-640x1136.jpg [(max-width:480px)] | /wp-content/uploads/2016/08/DSC0764-proof-1136x640.jpg [(max-width:767px)] | /wp-content/uploads/2016/08/DSC0764-proof-960x1024.jpg [(max-width:960px)] | /wp-content/uploads/2016/08/DSC0764-proof-1024x683.jpg [(max-width:1024px)] | /wp-content/uploads/2016/08/DSC0764-proof-1349x900.jpg [(max-width:1250px)] | /wp-content/uploads/2016/08/DSC0764-proof-1349x900.jpg [(max-width:1440px)] | /wp-content/uploads/2016/08/DSC0764-proof-1920x1281.jpg [(max-width:1900px)] | /wp-content/uploads/2016/08/DSC0764-proof-1920x1281.jpg [(min-width:1901px)]" data-sizes="cover" data-parent-fit="cover" data-expand="40" data-ie8="/wp-content/uploads/2016/08/DSC0764-proof-960x1024.jpg" style="       background-repeat:no-repeat;       background-position:center center;       background-size:cover;"></div><!--[if lte IE 8]><style>   .lazypreload hero-bg-0{       background:url(/wp-content/uploads/2016/08/DSC0764-proof-960x1024.jpg);       background-repeat:no-repeat;       background-position:center center;       background-size:cover;       -ms-behavior: url(/backgroundsize.min.htc);       behavior: url(/backgroundsize.min.htc);}</style><![endif]-->  <div class="wrap"> #}
+          <h1>Meet your hosts</h1>
+            </div>
+    <!-- <img class="transition" src="https://www.turnefferesort.com/wp-content/themes/turneffe/dist/images/edge.svg  " alt="" /> -->
+</section>            <main class="main" role="main">
+          <!-- <div class="transition-layer">
+            <div class="bg-layer"></div>
+          </div> -->
+          <article class="post-264 page type-page status-publish hentry">
+  
+<section id="" class="content-num-0 standard-text content-block  background-color-light">
+	<div class="entry-container ">
+		<div class="inner">
+
+						  <h2 class="header">Dreamgateways</h2>
+			
+			
+	  	<div class="standard-content">
+	  		
+<p>Dreamagateways tours &amp; Travels is a provider of travel services in the Andaman Islands. We cater Holiday Tour Packages to
+Port Blair and other nearby Islands. Promoting Andaman Tourism, we offer tour packages and arrange customized trips, transfers
+with assistance, meals, tours, sightseeing, shopping, water activity, Air Ticket bookings and arrangements in Andamans. </p>
+			</div>
+
+			
+		</div>
+	</div>
+			<!-- <div class="transition-layer">
+			<div class="bg-layer"></div>
+		</div> -->
+	</section> 
+
+    <section class="two-tile content-block content-block left dark">
+    <figure class="equalHeight">
+              <div class="bg-img fade-lazyload lazyload bg0" data-bgset="{{ base_url() }}/images/amit.jpeg" data-sizes="cover" data-parent-fit="cover" data-expand="40" data-ie8="{{ base_url() }}/images/amit.jpeg" style="       background-repeat:no-repeat;       background-position:center center;       background-size:cover;"></div><!--[if lte IE 8]><style>   .bg0{       background:url(/wp-content/uploads/2018/06/Eddie-1440x810.jpg);       background-repeat:no-repeat;       background-position:center center;       background-size:cover;       -ms-behavior: url(/backgroundsize.min.htc);       behavior: url(/backgroundsize.min.htc);}</style><![endif]-->                  </figure>
+    <div class="content equalHeight">
+      <div class="inner">
+        <header>
+          <h2>AMIT KUMAR CHAKRABORTY</h2>
+                  </header>
+        <h3>Manager</h3>
+<p style="text-align: justify;">On Andaman, your vacation is what you make of it – and our Manager, Amit, is here to make sure our guests are connected with the activities that interest them most on the island. With options from snorkeling, scuba diving, fishing, and kayaking, all the way to lounging in an ocean side hammock and reading a book, Amit will help make your stay as action-packed, or restful as you desire.</p>
+<p style="text-align: justify;">Returning guests may recognize Amit as he previously worked for the resort for over 2 years. The wonderful colors of the ocean, the pristine reefs, and tranquil waters surrounding the resort have brought Amit back to Andaman Island where he helps guests map out their activities during their stay.</p>
+              </div>
+    </div>
+  </section>
+
+</article>
+
+        
+  
+{% endblock %}

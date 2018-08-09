@@ -17,31 +17,31 @@
   </div>
   <div class="l-page" role="document">
     <header class="l-region--header" role="banner">
-      <a class="navbar-brand" href="index.html">
-        <img width="125" class="logo" src="{{ base_url() }}/images/logo.png" alt="Logo" />
-        <img width="125" class="stuck-logo" src="{{ base_url() }}/images/logo-horizontal.png" alt="Logo" />
+      <a class="navbar-brand" href="{{ path_for('home') }}">
+        <img class="logo" src="{{ base_url() }}/images/logo.png" alt="Logo" />
+        <img class="stuck-logo" src="{{ base_url() }}/images/logo-horizontal.png" alt="Logo" />
       </a>
       <div class="meta">
         <a class="book-now booknow-trigger open-loader" href="#0">
           <span>Reserve Now</span>
         </a>
-        <a class="phone-num " href="tel:1.800.874.0118">
-          <span>1.800.874.0118</span>
+        <a class="phone-num" href="tel:+919474288404">
+          <span>+91-947-428-8404</span>
         </a>
       </div>
     </header>
 
-    <section class="home-hero hero front" id="hero" data-video="https://player.vimeo.com/external/179219914.hd.mp4?s=bdfd18b73dc220c44472e75191f91b1bda154d62&profile_id=119">
-      <div class="bg-img fade-lazyload lazyload lazypreload hero-bg-0" data-bgset="/wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-750x1334.jpg [(max-width:480px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1334x750.jpg [(max-width:767px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:960px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1536x960.jpg [(max-width:1024px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:1250px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:1440px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island.jpg [(max-width:1900px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island.jpg [(min-width:1901px)]"
+    <section class="home-hero hero front" id="hero" data-video="{{ base_url() }}/videos/fish.mp4">
+      {# <div class="bg-img fade-lazyload lazyload lazypreload hero-bg-0" data-bgset="/wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-750x1334.jpg [(max-width:480px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1334x750.jpg [(max-width:767px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:960px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1536x960.jpg [(max-width:1024px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:1250px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:1440px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island.jpg [(max-width:1900px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island.jpg [(min-width:1901px)]"
         data-sizes="cover" data-parent-fit="cover" data-expand="40" data-ie8="/wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg"
-        style="       background-repeat:no-repeat;       background-position:center center;       background-size:cover;"></div>
+        style="       background-repeat:no-repeat;       background-position:center center;       background-size:cover;"></div> #}
       <!--[if lte IE 8]><style>   .lazypreload hero-bg-0{       background:url(/wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg);       background-repeat:no-repeat;       background-position:center center;       background-size:cover;       -ms-behavior: url(/backgroundsize.min.htc);       behavior: url(/backgroundsize.min.htc);}</style><![endif]-->
       <div class="wrap">
         <div class="wrap-inner">
           <h1>DreamGateways</h1>
           <p>
             <br>A gateway to explore Andaman</p>
-          <a class="button-play video" href="https://vimeo.com/179095593">
+          <a class="button-play video" href="{{ base_url() }}/videos/fish.mp4">
             <svg class="icon icon-play">
               <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-play"></use>
             </svg>
@@ -52,7 +52,7 @@
         <h4>Discover our remote island's world-class sea adventures</h4>
         <ul>
           <li>
-            <a href="fly-fishing/index.html">
+            <a>
               <svg class="icon icon-fish">
                 <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-fish"></use>
               </svg>
@@ -60,7 +60,7 @@
             </a>
           </li>
           <li>
-            <a href="diving/index.html">
+            <a>
               <svg class="icon icon-diving">
                 <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-diving"></use>
               </svg>
@@ -68,7 +68,7 @@
             </a>
           </li>
           <li>
-            <a href="snorkeling/index.html">
+            <a>
               <svg class="icon icon-snorkeling">
                 <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-snorkeling"></use>
               </svg>
@@ -76,7 +76,7 @@
             </a>
           </li>
           <li>
-            <a href="relaxation/index.html">
+            <a>
               <svg class="icon icon-relaxing">
                 <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-relaxing"></use>
               </svg>
@@ -141,28 +141,28 @@
                 <svg class="icon icon-plane">
                   <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-plane"></use>
                 </svg>
-                <span>Houston to
-                  <br>Belize City</span>
+                <span>Chennai/Kolkata
+                  <br>to Port Blair</span>
               </div>
-              <div class="data">2:30 HRS</div>
+              <div class="data">2:00 HRS</div>
             </div>
             <div class="info temp">
               <div class="label">
                 <svg class="icon icon-boat">
                   <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-boat"></use>
                 </svg>
-                <span>Belize City to
-                  <br>Turneffe Island</span>
+                <span>Port Blair
+                  <br>to Havelock</span>
               </div>
-              <div class="data">1:30 HRS</div>
+              <div class="data">2:00 HRS</div>
             </div>
             <div class="info temp">
               <div class="label">
                 <svg class="icon icon-boat">
                   <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-boat"></use>
                 </svg>
-                <span>Turneffe Island to
-                  <br>Great Blue Hole</span>
+                <span>Havelock to
+                  <br>Neil Island</span>
               </div>
               <div class="data">1:30 HRS</div>
             </div>
@@ -227,7 +227,7 @@
                 <path d="M.5 46.87V21.16h92.73l16.04 12.86-16.04 12.85H.5z" class="cls-2" />
                 <path d="M93.05 21.66l15.42 12.36-15.42 12.35H1V21.66h92.05m.35-1H0v26.71h93.4l16.67-13.35L93.4 20.66z" class="tag " />
                 <text class="cls-4" transform="translate(14.86 37.78)">
-                  Houston, Texas
+                  Baratang Island
                 </text>
               </g>
               <circle id="HOUSTON-DOT" cx="121.08" cy="34.02" r="10" data-group="houston" class="dot selected clickable" />
@@ -237,7 +237,7 @@
                 <path d="M327.28 39.31l15.42 12.35-15.42 12.35h-92.05v-24.7h92.05m.35-1h-93.4v26.7h93.4l16.67-13.35-16.67-13.35z" class="tag"
                 />
                 <text class="cls-4" transform="translate(252.29 55.43)">
-                  Miami, Florida
+                 Cellular Jail
                 </text>
               </g>
               <circle id="MIAMI-DOT" cx="355.51" cy="51.66" r="10" data-group="miami" class="dot clickable" />
@@ -247,7 +247,7 @@
                 <path d="M133.65 116.3l15.42 12.35L133.65 141H41.59v-24.7h92.05m.35-1h-93.4v26.71H134l16.67-13.35L134 115.3z" class="tag"
                 />
                 <text class="cls-4" transform="translate(66.72 132.42)">
-                  Belize City
+                  Wandoor Beach&nbsp; &nbsp;     
                 </text>
               </g>
               <circle id="BELIZE-DOT" cx="162.83" cy="129.43" r="6.77" class="cls-7" transform="rotate(-53.35 162.07 129.04)" />
@@ -255,7 +255,7 @@
                 <path d="M396.82 163.35l-16.04-12.86 16.04-12.85h92.73v25.71h-92.73z" class="cls-2" />
                 <path d="M489 138.14v24.71h-92l-15.42-12.35L397 138.14h92m1-1h-93.4L380 150.49l16.67 13.35H490v-26.7z" class="tag" />
                 <text class="cls-4" transform="translate(403.15 154.06)">
-                  Cayman Islands
+                  Havelock Island
                 </text>
               </g>
               <circle id="CAYMAN-DOT" cx="369.04" cy="150.49" r="6.77" class="dot" />
@@ -264,7 +264,7 @@
                 <path d="M397.33 206.12v24.7h-92.05l-15.42-12.35 15.42-12.35h92.05m1-1h-93.4l-16.67 13.35 16.67 13.35h93.4v-26.7z" class="tag"
                 />
                 <text class="cls-4" transform="translate(308.33 222.24)">
-                  Great Blue Hole
+                  Cellur Jail
                 </text>
               </g>
               <circle id="BLUE-HOLE-DOT" cx="276.99" cy="218.13" r="6.77" class="cls-8" transform="rotate(-53.35 276.24 217.74)" />
@@ -273,7 +273,7 @@
                 <path d="M408.78 172.49v24.73h-92.06l-15.42-12.35 15.42-12.35h92.05m1-1h-93.4l-16.67 13.35 16.67 13.35h93.4v-26.73z" class="tag"
                 />
                 <text class="cls-4" transform="translate(320.11 188.41)">
-                  Half Moon Caye
+                 Ross Island
                 </text>
               </g>
               <circle id="HALF-MOON-DOT" cx="288.25" cy="184.85" r="6.77" class="dot" />
@@ -281,7 +281,7 @@
                 <path d="M191.6 195.13h-146v-28.71h146l16.66 14.36-16.66 14.35z" class="cls-9" />
                 <path d="M19.47 166.42h28.71v28.71H19.47z" class="cls-10" />
                 <text class="cls-11" transform="translate(59.82 184.19)">
-                  Turneffe Island Resort
+                  DreamGateways
                 </text>
                 <path id="_1" d="M33.83 176.13a2.58 2.58 0 1 0 2.58 2.58 2.58 2.58 0 0 0-2.58-2.58zm0 4.13a1.55 1.55 0 1 1 1.55-1.55 1.55 1.55 0 0 1-1.55 1.51zm0-7.75a6.2 6.2 0 0 0-6.2 6.2c0 2.59 5.17 10.34 6.2 10.33S40 181.22 40 178.71a6.2 6.2 0 0 0-6.17-6.2zm0 15c-.86 0-5.17-6.62-5.17-8.78a5.17 5.17 0 0 1 10.33 0c.01 2.11-4.32 8.77-5.16 8.76z"
                   class="cls-2" data-name="1" />
@@ -301,7 +301,7 @@
             <p>Indulge in snorkeling or scuba diving to see magnificent coral reefs or stay in beach resorts at Havelock island.
               Visit Port Blair, Ross Islands, Neil Islands, Gandhi marine park, and Cellular Jail. Book memorable holiday
               packages on TravelTriangle.</p>
-            <a href="fly-fishing/index.html" class="button">
+            <a href="{{ path_for('contact') }}" class="button">
               <span>Get Started</span>
             </a>
           </div>
@@ -382,7 +382,7 @@
             <p>As the colourful reefs of Havelock Island shimmers through your goggles you’ll know what made Ringo Starr sing
               “Octopus’s Garden”. See the underwater marine life and view the rarest of corals while enjoying one of the
               best water activities in Andaman at the North Bay Island.</p>
-            <a href="diving/index.html" class="button">
+            <a href="{{ path_for('contact') }}" class="button">
               <span>Dive In</span>
             </a>
           </div>

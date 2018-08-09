@@ -1,7 +1,7 @@
 <footer class="l-region--footer" role="contentinfo">
   <div class="logo">
     <a class="navbar-brand" href="index.html">
-      <img width="100" class="" src="{{ base_url() }}/images/logo.png" alt="Logo" />
+      <img width="200" class="" src="{{ base_url() }}/images/logo.png" alt="Logo" />
     </a>
   </div>
   <div class="connect">
@@ -85,12 +85,12 @@
   <div class="copywrite">
     <div class="wrap">
       <span>&copy; 2018 Dreamgateways</span> |
-      <span>Andaman</span> |
-      <span>
+      {# <span>Andaman</span> | #}
+      {# <span>
         <a href="policies/index.html">Policies</a>
-      </span> |
+      </span> | #}
       <span>
-        <a href="contact/index.html">Contact</a>
+        <a href="{{ path_for('contact') }}">Contact</a>
       </span> |
       <span>Website by
         <a href="http://www.idevia.in/" target="_blank">iDevia</a>

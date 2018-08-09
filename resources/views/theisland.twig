@@ -1,0 +1,76 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+  
+  <div class="mobile-nav-trigger-handler">
+
+    <a class="mobile-nav-trigger menu-toggle action--open" href="#0">
+      <span>
+        <span class="open">Menu</span>
+        <span class="close"><svg class="icon icon-cross"><use xlink:href="{{ base_url() }}/images/symbols.svg#icon-cross"></use></svg></span>
+      </span>
+    </a>
+  </div>
+  <div class="l-page" role="document">
+    <header class="l-region--header" role="banner">
+    <a class="navbar-brand" href="{{ path_for('home') }}">
+      <img width="162" class="logo" src="{{ base_url() }}/images/logo.png" alt="Logo"/>
+      <img width="162" class="stuck-logo" src="{{ base_url() }}/images/logo-horizontal.png" alt="Logo"/>
+    </a>
+    <div class="meta">
+      <a class="book-now booknow-trigger open-loader" href="#0"><span>Reserve Now</span></a>
+      <a class="phone-num" href="tel:+919474288404">
+          <span>+91-947-428-8404</span></a>
+    </div>
+</header>
+
+<section class="hero back not-full-screen" id="hero" data-video="{{ base_url() }}/videos/fish.mp4">
+  {# <div class="bg-img fade-lazyload lazyload lazypreload hero-bg-0" data-bgset="/wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-750x1334.jpg [(max-width:480px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1334x750.jpg [(max-width:767px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:960px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1536x960.jpg [(max-width:1024px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:1250px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg [(max-width:1440px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island.jpg [(max-width:1900px)] | /wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island.jpg [(min-width:1901px)]" data-sizes="cover" data-parent-fit="cover" data-expand="40" data-ie8="/wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg" style="       background-repeat:no-repeat;       background-position:center center;       background-size:cover;"></div><!--[if lte IE 8]><style>   .lazypreload hero-bg-0{       background:url(/wp-content/uploads/2016/08/Turneffe-Island-Resort-the-island-1440x900.jpg);       background-repeat:no-repeat;       background-position:center center;       background-size:cover;       -ms-behavior: url(/backgroundsize.min.htc);       behavior: url(/backgroundsize.min.htc);}</style><![endif]-->  <div class="wrap"> #}
+          <h1>The Island</h1>
+            </div>
+    <!-- <img class="transition" src="https://www.turnefferesort.com/wp-content/themes/turneffe/dist/images/edge.svg  " alt="" /> -->
+</section>            <main class="main" role="main">
+          <!-- <div class="transition-layer">
+            <div class="bg-layer"></div>
+          </div> -->
+          <article class="post-254 page type-page status-publish hentry">
+  
+<section id="" class="content-num-0 standard-text content-block  background-color-light">
+	<div class="entry-container ">
+		<div class="inner">
+
+						  <h2 class="header">Located on a geological wonder</h2>
+			
+			
+	  	<div class="standard-content">
+	  		<p>Your things to do in Andaman list will find no stopping when your wanderlust soul meets the sunny skies, golden beaches,
+        turquoise waters, and untouched environs. It certainly will not be wrong to call Andaman as an ultimate, perfect go-to destination
+        that attracts travellers from across the globe with its beauty of the archipelago of 572 islands. There are adventure sports,
+        water activities, activities for the nature lovers, sightseeing spots and so much more to do that you will require at least
+        10 days to live life fullest on this island. Getting to this destination is not very difficult but may be tiring. If you
+        choose to fly, Deboard at Vir Savarkar Airport in Port Blair is the nearest airport. And if you choose to cruise on a ship,
+        Alight at Haddo Wharf Port in Port Blair is where you need to head. There are regular ship services available from Chennai,
+        Kolkata, and Vizag for visitors. The first sight of this island will be enough to keep you astonished and the excitement
+        that follows will make you want to do everything. You can go snorkelling to see the exquisite marine life and rarest corals
+        at North Bay Island or Elephant Beach at Havelock Island, or you can witness Bioluminescence at Havelock Island where water
+        glows as you row your boat through them. You can go scuba diving to discover colorful corals and enchanting water life, get
+        on to a fun-filled bumper or banana boat ride; experience glass bottom boat ride that gives you a good view of the corals
+        beneath, try out the blend of water and airborne adventure of Parasailing, swim with Rajan-the star elephant, or go for a
+        seaplane run by Pawan Hans. Moreover, as Andaman is a myriad of beaches and tourist attractions spread across the various
+        islands, there is a lot to see here. So you can put on some sunscreen and head out to explore best of the island. You can
+        tour major islands like Havelock Island, Neil Island, Port Blair, and Ross &amp; Smith Island and visit other popular spots in
+        Andaman such as Cellular Jail National Memorial, Samudrika Marine Museum, Rajiv Gandhi Water Sports Complex in Port Blair;
+        Radhanagar Beach on Havelock Island; Mahatma Gandhi Marine National Park; mud volcanoes of Baratang, active volcano at Barren
+        Island; and Chidiya Tapu. <p><strong>Some of the best things to do in Andaman are:<ul> <li>1. Scuba Diving</li><li>2. Snorkelling</li><li>3. Sea Walking</li><li>4. Attending Celluar Jail Light and Sound Show</li><li>5. Glass Bottom Boating</li><li>6. Sea Plane Ride</li><li>7. Visit Lime Stone Caves at Baratang Island</li></ul></strong></p></p>
+			</div>
+
+							<div class='link-handler'>
+					<a class="btn  btn" href="{{ path_for('contact') }}"><span>Get Started</span></a>				</div>
+			
+		</div>
+	</div>
+			
+</article>
+        </main>
+
+{% endblock %}

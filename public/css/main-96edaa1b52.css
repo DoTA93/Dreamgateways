@@ -1740,7 +1740,7 @@ body.nav-is-visible {
 
 @media (min-width:768px) {
   .l-region--header .navbar-brand {
-    width: 9rem;
+    width: 13rem;
   }
 }
 
@@ -1783,7 +1783,8 @@ body.nav-is-visible {
 }
 
 .l-region--header.stuck .navbar-brand img {
-  width: 100%;
+  width: auto;
+  height: 75px;
 }
 
 @media (min-width:550px) {

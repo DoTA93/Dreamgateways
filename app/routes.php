@@ -6,29 +6,30 @@ $app->get('/', function ($request, $response) {
   return $this->view->render($response, 'home.twig');
 })->setName('home');
 
-$app->get('/about', function ($request, $response) {
-  return $this->view->render($response, 'about.twig');
-})->setName('about');
+$app->get('/pricing', function ($request, $response) {
+  return $this->view->render($response, 'pricing.twig');
+})->setName('pricing');
 
-$app->get('/services', function ($request, $response) {
-  return $this->view->render($response, 'services.twig');
-})->setName('services');
+$app->get('/yourhosts', function ($request, $response) {
+  return $this->view->render($response, 'yourhosts.twig');
+})->setName('yourhosts');
 
 $app->get('/contact', function ($request, $response) {
   return $this->view->render($response, 'contact.twig');
 })->setName('contact');
 
-$app->get('/mutual-fund', function ($request, $response) {
-  return $this->view->render($response, 'mutualFund.twig');
-})->setName('mutual.fund');
+$app->get('/theisland', function ($request, $response) {
+  return $this->view->render($response, 'theisland.twig');
+})->setName('theisland');
+
 
 // $app->get('/finarc-institution', function ($request, $response) {
 //   return $this->view->render($response, 'finarc.twig');
 // })->setName('finarc.institution');
 
-$app->get('/insurance', function ($request, $response) {
-  return $this->view->render($response, 'insurance.twig');
-})->setName('insurance');
+// $app->get('/insurance', function ($request, $response) {
+//   return $this->view->render($response, 'insurance.twig');
+// })->setName('insurance');
 
 $app->post('/send', function ($request, $response, $args) {
     $name = $request->getParam('name');

@@ -7,19 +7,19 @@
       <div class="menu__wrap">
         <ul data-menu="main" class="menu__level">
           <li class="menu__item  menu__primary_navigation">
-            <a class="menu__link" href="our-rates/index.html">Pricing</a>
+            <a class="menu__link" href="{{ path_for('pricing') }}">Packages</a>
           </li>
           <li class="menu__item  menu__primary_navigation">
             <a class="menu__link" href="#" data-submenu="submenu-276">About</a>
           </li>
-          <li class="menu__item  menu__primary_navigation">
+          {# <li class="menu__item  menu__primary_navigation">
             <a class="menu__link" href="#" data-submenu="submenu-297">Plan Your Trip</a>
-          </li>
+          </li> #}
           <li class="menu__item  menu__primary_navigation">
-            <a class="menu__link" href="contact/index.html">Contact</a>
+            <a class="menu__link" href="{{ path_for('contact') }}">Contact</a>
           </li>
         </ul>
-        <ul data-menu="submenu-393" class="menu__level">
+        {# <ul data-menu="submenu-393" class="menu__level">
           <li class="menu__item  menu__primary_navigation">
             <a class="menu__link" href="fly-fishing/index.html">Sea Walk</a>
           </li>
@@ -38,17 +38,17 @@
           <li class="menu__item  menu__primary_navigation">
             <a class="menu__link" href="dining/index.html">Dining</a>
           </li>
-        </ul>
-        </ul>
+        </ul> #}
+        {# </ul> #}
         <ul data-menu="submenu-276" class="menu__level">
           <li class="menu__item  menu__primary_navigation">
-            <a class="menu__link" href="the-island/index.html">The Island</a>
+            <a class="menu__link" href="{{ path_for('theisland') }}">The Island</a>
           </li>
           <li class="menu__item  menu__primary_navigation">
-            <a class="menu__link" href="your-hosts/index.html">Your Hosts</a>
+            <a class="menu__link" href="{{ path_for('yourhosts') }}">Your Hosts</a>
           </li>
         </ul>
-        <ul data-menu="submenu-297" class="menu__level">
+        {# <ul data-menu="submenu-297" class="menu__level">
           <li class="menu__item  menu__primary_navigation">
             <a class="menu__link" href="how-to-reserve/index.html">How to Reserve</a>
           </li>
@@ -61,7 +61,7 @@
           <li class="menu__item  menu__primary_navigation">
             <a class="menu__link" href="what-to-do-in-belize-city/index.html">What to do in Andaman</a>
           </li>
-        </ul>
+        </ul> #}
       </div>
     </nav>
 
@@ -72,8 +72,8 @@
         <a class=" btn book-now booknow-trigger open-loader" href="#0">
           <span>Reserve Now</span>
         </a>
-        <a class="phone-num btn" href="tel:1.800.874.0118">
-          <span>1.800.874.0118</span>
+        <a class="phone-num btn" href="tel:+919474288404">
+          <span>+91-947-428-8404</span>
         </a>
         <!-- <a class="btn pano" href="app/themes/turneffe/panos/TurneffeIslandResort/TurneffeIslandResort.html">
           <span>Book Now</span>
@@ -83,17 +83,17 @@
           </div> -->
 
       <div class="social">
-        <a href="https://www.facebook.com/turnefferesort/" target="_blank" aria-label="Facebook Link">
+        <a href="#" target="_blank" aria-label="Facebook Link">
           <svg class="icon icon-facebook2">
             <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-facebook2"></use>
           </svg>
         </a>
-        <a href="https://twitter.com/turnefferesort" target="_blank" aria-label="Twitter Link">
+        <a href="#" target="_blank" aria-label="Twitter Link">
           <svg class="icon icon-twitter">
             <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-twitter"></use>
           </svg>
         </a>
-        <a href="https://www.instagram.com/turnefferesort/" target="_blank" aria-label="Instagram Link">
+        <a href="#" target="_blank" aria-label="Instagram Link">
           <svg class="icon icon-instagram">
             <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-instagram"></use>
           </svg>

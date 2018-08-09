@@ -1,186 +1,96 @@
 {% extends 'templates/app.twig' %}
 {% block content %}
-  <header>
-    <div class="jumbotron jumbotron-fluid contact-splash full-header mb-0">
-      <div class="container">
-        <h1 class="display-5 text-primary text-uppercase">Contact us</h1>
-      </div>      
-    </div>
-  </header>
   
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <p class="lead text-primary">Get in touch</p>
+   <div class="mobile-nav-trigger-handler">
 
-          <form action="/fci/public/send" id="contact-form" method="post">
-
-            <div class="form-group pb-3">
-              <label for="name">Name*</label>
-              <input type="text" class="form-control input-field" name="name" id="name" required="required">
-            </div>
-
-            <div class="form-group pb-3">
-              <label for="email">Email address*</label>
-              <input type="email" class="form-control input-field" name="email" id="email" required="required">
-            </div>
-
-            <div class="form-group pb-3">
-              <label for="phone">Contact number*</label>
-              <input type="text" class="form-control input-field" name="phone" id="phone" required="required">
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message*</label>
-              <textarea rows="5" class="form-control input-field" name="message" id="message" required="required"></textarea>
-            </div>
-
-            <input type="submit" value="Submit" class="btn btn-primary float-right btn-submit">
-            <p class="text-primary">*Required fields</p>
-          </form>
-          <p class="text-success" id="feedback"></p>
-          <p class="text-success" id="err-feedback"></p>
-        </div>
-        <div class="col-md-5 offset-md-2">
-          <p class="lead text-primary">Address</p>
-          <p class="mb-4">Flip Coin Investments <br>
-            No. 579, 3rd floor, Sanjeeva Nilaya <br>
-            30th Main, 80 feet road, Banagirinagar <br>
-            Banashankari 3rd stage <br>
-            Bangalore - 560070</p>
-
-            <p class="mb-4">
-              Email: info@flipcoininvestment.com <br>
-              <span class="opacity-0">Email:</span>
-              flipcoininvestments@gmail.com
-            </p>
-
-            <p class="mb-5">
-              Phone: +91-7406132221
-            </p>
-
-            <div id="map" class="map"></div>
-        </div>
-      </div>
+    <a class="mobile-nav-trigger menu-toggle action--open" href="#0">
+      <span>
+        <span class="open">Menu</span>
+        <span class="close"><svg class="icon icon-cross"><use xlink:href="{{ base_url() }}/images/symbols.svg#icon-cross"></use></svg></span>
+      </span>
+    </a>
+  </div>
+  <div class="l-page" role="document">
+    <header class="l-region--header" role="banner">
+    <a class="navbar-brand" href="{{ path_for('home') }}">
+      <img  class="logo" src="{{ base_url() }}/images/logo.png" alt="Logo"/>
+      <img  class="stuck-logo" src="{{ base_url() }}/images/logo-horizontal.png" alt="Logo"/>
+    </a>
+    <div class="meta">
+      <a class="book-now booknow-trigger open-loader" href="#0"><span>Reserve Now</span></a>
+      <a class="phone-num" href="tel:+919474288404">
+          <span>+91-947-428-8404</span></a>
     </div>
-  </section>
+</header>
 
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkXsV42TAECYCNYLCd1mIO-j2J3IkYBvo"></script>
+<section class="hero back not-full-screen" id="hero" data-video="{{ base_url() }}/videos/fish.mp4">
+  {# <div class="bg-img fade-lazyload lazyload lazypreload hero-bg-0" data-bgset="/wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1-750x1334.jpg [(max-width:480px)] | /wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1-1334x750.jpg [(max-width:767px)] | /wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1-1440x900.jpg [(max-width:960px)] | /wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1-1536x960.jpg [(max-width:1024px)] | /wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1-1440x900.jpg [(max-width:1250px)] | /wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1-1440x900.jpg [(max-width:1440px)] | /wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1.jpg [(max-width:1900px)] | /wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1.jpg [(min-width:1901px)]" data-sizes="cover" data-parent-fit="cover" data-expand="40" data-ie8="/wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1-1440x900.jpg" style="       background-repeat:no-repeat;       background-position:center top;       background-size:cover;"></div><!--[if lte IE 8]><style>   .lazypreload hero-bg-0{       background:url(/wp-content/uploads/2016/07/Turneffe-Island-Resort-Contact-Hero-1-1440x900.jpg);       background-repeat:no-repeat;       background-position:center center;       background-size:cover;       -ms-behavior: url(/backgroundsize.min.htc);       behavior: url(/backgroundsize.min.htc);}</style><![endif]-->  <div class="wrap"> #}
+          <h1>Contact</h1>
+          
+            </div>
 
-    <script type="text/javascript">
-    // When the window has finished loading create our google map below
-    google.maps.event.addDomListener(window, 'load', init);
+    <!-- <img class="transition" src="https://www.turnefferesort.com/wp-content/themes/turneffe/dist/images/edge.svg  " alt="" /> -->
+  
+</section>            <main class="main" role="main">
 
-    function init() {
-      // Basic options for a simple Google Map
-      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-      var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 14,
-
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(12.9255482, 77.5607853), // LOCATION
-
-        // How you would like to style the map.
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [
-          {
-            "featureType":"administrative",
-            "elementType":"labels.text.fill",
-            "stylers":[
-              {
-                "color":"#444444"
-              }
-            ]
-          },
-          {
-            "featureType":"landscape",
-            "elementType":"all",
-            "stylers":[
-              {
-                "color":"#f2f2f2"
-              }
-            ]
-          },
-          {
-            "featureType":"poi",
-            "elementType":"all",
-            "stylers":[
-              {
-                "visibility":"off"
-              }
-            ]
-          },
-          {
-            "featureType":"road",
-            "elementType":"all",
-            "stylers":[
-              {
-                "saturation":-100
-              },
-              {
-                "lightness":45
-              }
-            ]
-          },
-          {
-            "featureType":"road.highway",
-            "elementType":"all",
-            "stylers":[
-              {
-                "visibility":"simplified"
-              }
-            ]
-          },
-          {
-            "featureType":"road.arterial",
-            "elementType":"labels.icon",
-            "stylers":[
-              {
-                "visibility":"off"
-              }
-            ]
-          },
-          {
-            "featureType":"transit",
-            "elementType":"all",
-            "stylers":[
-              {
-                "visibility":"off"
-              }
-            ]
-          },
-          {
-            "featureType":"water",
-            "elementType":"all",
-            "stylers":[
-              {
-                "color":"#3353a5"
-              },
-              {
-                "visibility":"on"
-              }
-            ]
-          }
-        ]
-      };
-
-      // Get the HTML DOM element that will contain your map
-      // We are using a div with id="map" seen below in the <body>
-      var mapElement = document.getElementById('map');
-
-      // Create the Google Map using our element and options defined above
-      var map = new google.maps.Map(mapElement, mapOptions);
-
-      // Let's also add a marker while we're at it
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(12.9255482, 77.5607853),
-        map: map,
-        title: 'Flip Coin Investment',
-        zoomControl: false
-      });
-    }
-    </script>
+          <!-- <div class="transition-layer">
+            <div class="bg-layer"></div>
+          </div> -->
+          <div class="contact-locations">
+  <div class="contact-form is-column">
+    <div class="wrap">
+      <div class="contact-area">
+  <ul class="address">
+    <li>
+      <h3>Dreamgateways Tours &amp; Travels</h3>
+    </li>
+    <!-- <li>
+    <a class="get-directions" target="_blank" href='https://www.google.ca/maps/place/ , , '>
+      <br>
+      , <br>
+       ,       </a>
+    </li> -->
+  </ul>
+  <ul class="contact-info">
+    <li><a class="phone-num" href="tel:+919474288404">P +919940172613</a></li>
+    <!-- <li><a class="fax-num" href="tel:">F </a></li> -->
+    <li><a class="email" href="mailto:info@turnefferesort.com">enquiry@dreamgateways.com</a></li>
+      </ul>
+  <ul class="address" style="margin-top:40px;">
+    <li><h3>Head Office</h3></li>
+    <li>Andaman<br>
+India<li>
+<li><a href="tel:+919474288404">M: +919474288404</a>
+P: 03192251026
+</li>
+  </ul>
+</div>      
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_2'><a id='gf_2' class='gform_anchor'></a><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_2' id='gform_2' action='https://www.turnefferesort.com/contact/#gf_2'>
+                        <div class='gform_heading'>
+                            <h3 class='gform_title'>Send us a message</h3>
+                        </div>
+                        <div class='gform_body'><ul id='gform_fields_2' class='gform_fields top_label form_sublabel_below description_below'><li id='field_2_1' class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_2_1'>Name<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_2_1' type='text' value='' class='medium' placeholder='Name' aria-required="true" aria-invalid="false"/></div></li><li id='field_2_2' class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_2_2'>Email<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_2_2' type='email' value='' class='medium' placeholder='Email' aria-required="true" aria-invalid="false"/>
+                        </div></li><li id='field_2_3' class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_2_3'>Comment<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_3' id='input_2_3' class='textarea medium' placeholder='Comment' aria-required="true" aria-invalid="false" rows='10' cols='50'></textarea></div></li><li id='field_2_4' class='gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_2_4'>Name</label><div class='ginput_container'><input name='input_4' id='input_2_4' type='text' value='' autocomplete='off'/></div><div class='gfield_description'>This field is for validation purposes and should be left unchanged.</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_2' class='gform_button button' value='Send' onclick='if(window["gf_submitting_2"]){return false;}  if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_2"]){return false;} if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  jQuery("#gform_2").trigger("submit",[true]); }'/> <input type='hidden' name='gform_ajax' value='form_id=2&amp;title=1&amp;description=&amp;tabindex=0'/>
+            <input type='hidden' class='gform_hidden' name='is_submit_2' value='1'/>
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='2'/>
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value=''/>
+            <input type='hidden' class='gform_hidden' name='state_2' value='WyJbXSIsIjA0NzY0MzFjNWIzN2QxNGYxNjc4MzUxZmViNTY4MjRiIl0='/>
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_2' id='gform_target_page_number_2' value='0'/>
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_2' id='gform_source_page_number_2' value='1'/>
+            <input type='hidden' name='gform_field_values' value=''/>
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_2' id='gform_ajax_frame_2' title='Ajax Frame'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>(function(){var loaded=false;var gf_global;var nTimer=setInterval(function(){if(typeof window["rgars"]==="function"&&!loaded){loaded=true;jQuery(document).ready(function($){gformInitSpinner(2,'../wp-content/plugins/gravityforms/images/spinner.gif');jQuery('#gform_ajax_frame_2').on('load',function(){var contents=jQuery(this).contents().find('*').html();var is_postback=contents.indexOf('GF_AJAX_POSTBACK')>=0;if(!is_postback){return;}var form_content=jQuery(this).contents().find('#gform_wrapper_2');var is_confirmation=jQuery(this).contents().find('#gform_confirmation_wrapper_2').length>0;var is_redirect=contents.indexOf('gformRedirect(){')>=0;var is_form=form_content.length>0&&!is_redirect&&!is_confirmation;if(is_form){jQuery('#gform_wrapper_2').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_2').addClass('gform_validation_error');}else{jQuery('#gform_wrapper_2').removeClass('gform_validation_error');}setTimeout(function(){jQuery(document).scrollTop(jQuery('#gform_wrapper_2').offset().top);},50);if(window['gformInitDatepicker']){gformInitDatepicker();}if(window['gformInitPriceFields']){gformInitPriceFields();}var current_page=jQuery('#gform_source_page_number_2').val();gformInitSpinner(2,'../wp-content/plugins/gravityforms/images/spinner.gif');jQuery(document).trigger('gform_page_loaded',[2,current_page]);window['gf_submitting_2']=false;}else if(!is_redirect){var confirmation_content=jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content=contents;}setTimeout(function(){jQuery('#gform_wrapper_2').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_2').offset().top);jQuery(document).trigger('gform_confirmation_loaded',[2]);window['gf_submitting_2']=false;},50);}else{jQuery('#gform_2').append(contents);if(window['gformRedirect']){gformRedirect();}}jQuery(document).trigger('gform_post_render',[2,current_page]);});});;if(typeof gf_global!=="undefined"){window.gf_global=gf_global;}
+if(typeof gformRedirect==="function"){gformRedirect();}
+clearInterval(nTimer);}},500);})();</script>    </div>
+  </div>
+</div>        </main>
 
 {% endblock %}
