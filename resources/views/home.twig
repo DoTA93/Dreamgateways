@@ -18,7 +18,7 @@
   <div class="l-page" role="document">
     <header class="l-region--header" role="banner">
       <a class="navbar-brand" href="{{ path_for('home') }}">
-        <img class="logo" src="{{ base_url() }}/images/logo.png" alt="Logo" />
+        <img width="250" class="logo" src="{{ base_url() }}/images/logo.png" alt="Logo" />
         <img class="stuck-logo" src="{{ base_url() }}/images/logo-horizontal.png" alt="Logo" />
       </a>
       <div class="meta">
@@ -110,7 +110,7 @@
                 <span>Current
                   <br>Island Time</span>
               </div>
-              <div class="data" id="time"></div>
+              <div class="data" id="isttime"></div>
             </div>
             <div class="info temp">
               <div class="label">
@@ -120,7 +120,7 @@
                 <span>Current
                   <br>Temperature</span>
               </div>
-              <div class="data" id="temp"></div>
+              <div class="data" id="temperature"></div>
             </div>
             <div class="info temp">
               <div class="label">
@@ -136,7 +136,7 @@
 
           <div class="info-box time">
             <h4>Travel Time</h4>
-            <div class="info time">
+            <div class="info temp">
               <div class="label">
                 <svg class="icon icon-plane">
                   <use xlink:href="{{ base_url() }}/images/symbols.svg#icon-plane"></use>
@@ -223,16 +223,16 @@
               <circle id="OUTER-CIRCLE-2" cx="228.53" cy="183" r="145.41" class="cls-1 circle" />
               <circle id="OUTER-CIRCLE" cx="228.53" cy="183" r="182.5" class="cls-1 circle" />
 
-              <g id="HOUSTON-TAG" class="tag-group clickable selected" data-group="houston">
+              <g id="HOUSTON-TAG" class="tag-group" data-group="houston">
                 <path d="M.5 46.87V21.16h92.73l16.04 12.86-16.04 12.85H.5z" class="cls-2" />
                 <path d="M93.05 21.66l15.42 12.36-15.42 12.35H1V21.66h92.05m.35-1H0v26.71h93.4l16.67-13.35L93.4 20.66z" class="tag " />
                 <text class="cls-4" transform="translate(14.86 37.78)">
                   Baratang Island
                 </text>
               </g>
-              <circle id="HOUSTON-DOT" cx="121.08" cy="34.02" r="10" data-group="houston" class="dot selected clickable" />
+              <circle id="HOUSTON-DOT" cx="121.08" cy="34.02" r="10" data-group="houston" class="dot" />
 
-              <g id="MIAMI-TAG" class="tag-group clickable" data-group="miami">
+              <g id="MIAMI-TAG" class="tag-group" data-group="miami">
                 <path d="M234.73 64.52V38.81h92.72l16.05 12.85-16.05 12.86h-92.72z" class="cls-2" />
                 <path d="M327.28 39.31l15.42 12.35-15.42 12.35h-92.05v-24.7h92.05m.35-1h-93.4v26.7h93.4l16.67-13.35-16.67-13.35z" class="tag"
                 />
@@ -240,17 +240,17 @@
                  Cellular Jail
                 </text>
               </g>
-              <circle id="MIAMI-DOT" cx="355.51" cy="51.66" r="10" data-group="miami" class="dot clickable" />
+              <circle id="MIAMI-DOT" cx="355.51" cy="51.66" r="10" data-group="miami" class="dot" />
 
               <g id="BELIZE-TAG" class="tag-group ">
                 <path d="M41.09 141.51V115.8h92.73l16.04 12.85-16.04 12.86H41.09z" class="cls-2" />
                 <path d="M133.65 116.3l15.42 12.35L133.65 141H41.59v-24.7h92.05m.35-1h-93.4v26.71H134l16.67-13.35L134 115.3z" class="tag"
                 />
                 <text class="cls-4" transform="translate(66.72 132.42)">
-                  Wandoor Beach&nbsp; &nbsp;     
+                Wandoor   
                 </text>
               </g>
-              <circle id="BELIZE-DOT" cx="162.83" cy="129.43" r="6.77" class="cls-7" transform="rotate(-53.35 162.07 129.04)" />
+              <circle id="BELIZE-DOT" cx="162.83" cy="129.43" r="6.77" class="cls-7" transform="rotate(-53.35 162.07 129.04)" class="dot"/>
               <g id="CAYMAN-TAG" class="tag-group">
                 <path d="M396.82 163.35l-16.04-12.86 16.04-12.85h92.73v25.71h-92.73z" class="cls-2" />
                 <path d="M489 138.14v24.71h-92l-15.42-12.35L397 138.14h92m1-1h-93.4L380 150.49l16.67 13.35H490v-26.7z" class="tag" />
@@ -267,7 +267,7 @@
                   Cellur Jail
                 </text>
               </g>
-              <circle id="BLUE-HOLE-DOT" cx="276.99" cy="218.13" r="6.77" class="cls-8" transform="rotate(-53.35 276.24 217.74)" />
+              <circle id="BLUE-HOLE-DOT" cx="276.99" cy="218.13" r="6.77" class="cls-8" transform="rotate(-53.35 276.24 217.74)" class="dot"/>
               <g id="HALF-MOON-TAG" class="tag-group">
                 <path d="M316.55 197.7l-16.04-12.86 16.04-12.85h92.72v25.71h-92.72z" class="cls-2" />
                 <path d="M408.78 172.49v24.73h-92.06l-15.42-12.35 15.42-12.35h92.05m1-1h-93.4l-16.67 13.35 16.67 13.35h93.4v-26.73z" class="tag"
@@ -277,7 +277,7 @@
                 </text>
               </g>
               <circle id="HALF-MOON-DOT" cx="288.25" cy="184.85" r="6.77" class="dot" />
-              <g id="TURNEFFE-TAG" class="tag-group clickable">
+              <g id="" class="tag-group">
                 <path d="M191.6 195.13h-146v-28.71h146l16.66 14.36-16.66 14.35z" class="cls-9" />
                 <path d="M19.47 166.42h28.71v28.71H19.47z" class="cls-10" />
                 <text class="cls-11" transform="translate(59.82 184.19)">
